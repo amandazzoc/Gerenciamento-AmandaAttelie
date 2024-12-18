@@ -1,4 +1,6 @@
-import ChartOverview from "@/components/chart";
+import { AreaChartOverview } from "@/components/chart/AreaChart";
+import PieChartOverview from "@/components/chart/PieChart";
+
 import Pendentes from "@/components/pendente";
 import {
   Card,
@@ -14,6 +16,8 @@ export default function Home() {
     <main className="sm:ml-14 p-4">
       <section className="grid lg:grid-cols-3 gap-4">
         <Pendentes />
+        <PieChartOverview />
+        <AreaChartOverview/>
       </section>
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
         <Card>
@@ -79,9 +83,7 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-4 flex flex-col md:flex-row gap-4">
-        <ChartOverview />
-      </section>
+      <section className="mt-4 flex flex-col md:flex-row gap-4"></section>
     </main>
   );
 }
