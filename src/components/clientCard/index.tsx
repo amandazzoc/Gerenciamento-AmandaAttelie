@@ -1,6 +1,14 @@
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
-const ClientCard = ({ image, description, name, price }) => {
+interface ClientCardProps {
+  image: string;
+  description: string;
+  name: string;
+  price: string;
+}
+
+const ClientCard: React.FC<ClientCardProps> = ({ image, description, name, price }) => {
+  // Respeitando a tipagem do Typescript, sem a tipagem e usando a extensão .jsx, ficaria assim e sem o "interface" : const ClientCard = ({ image, description, name, price }) => {}
   return (
     <article className="flex items-center justify-between gap-2 border-b pb-2">
       <div className="flex gap-2">

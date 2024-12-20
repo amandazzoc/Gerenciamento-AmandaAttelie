@@ -17,6 +17,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import { ShoppingBag } from "lucide-react";
 
 
 const chartData = [
@@ -37,8 +38,13 @@ export default function PieChartOverview() {
 
   return (
     <Card className="flex flex-col">
-      <CardHeader className="pb-0">
-        <CardTitle>Total de vendas</CardTitle>
+      <CardHeader>
+        <div className="flex items-center justify-center">
+          <CardTitle className="text-lg sm:text-xl text-gray-800">
+            Total de vendas
+          </CardTitle>
+          <ShoppingBag className="ml-auto w-4 h-4" />
+        </div>
         <CardDescription>Dezembro 2024</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">

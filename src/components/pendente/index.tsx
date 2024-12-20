@@ -1,4 +1,4 @@
-import { Clock, Clock1, DollarSign } from "lucide-react";
+import { Clock } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -6,12 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import ClientCard from "@/components/ClientCard"
+import ClientCard from "../clientCard";
+
 
 export default function Pendentes() {
   return (
-    <Card className="flex-1">
+    <Card>
       <CardHeader>
         <div className="flex items-center justify-center">
           <CardTitle className="text-lg sm:text-xl text-gray-800">

@@ -1,6 +1,6 @@
 "use client";
 
-import { TrendingUp } from "lucide-react";
+import { DollarSignIcon, TrendingUp } from "lucide-react";
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
@@ -30,7 +30,12 @@ export function AreaChartOverview() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Faturamento</CardTitle>
+        <div className="flex items-center justify-center">
+          <CardTitle className="text-lg sm:text-xl text-gray-800">
+            Faturamento
+          </CardTitle>
+          <DollarSignIcon className="ml-auto w-4 h-4" />
+        </div>
         <CardDescription>Faturamento total nos últimos 6 meses</CardDescription>
       </CardHeader>
       <CardContent>
@@ -54,10 +59,7 @@ export function AreaChartOverview() {
             <ChartTooltip
               cursor={false}
               content={
-                <ChartTooltipContent
-                  indicator="dot"
-                  className="percentage"
-                />
+                <ChartTooltipContent indicator="dot" className="percentage" />
               }
             />
             <Area

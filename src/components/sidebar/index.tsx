@@ -8,23 +8,29 @@ import { TooltipProvider, Tooltip, TooltipContent, TooltipTrigger } from "../ui/
 
 export function Sidebar() {
   return (
-    <div className="flex w-full flex-col bg-background">
-      <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 border-r bg-background sm:flex flex-col">
+    <div className="flex w-full flex-col bg-primary">
+      <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 border-r bg-primary sm:flex flex-col">
         <nav className="flex flex-col items-center gap-4 px-2 py-5">
           <TooltipProvider>
             <Link
               href="/"
               className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary text-primary-foreground rounded-full"
             >
-              <Package className="h-4 w-4" />
-              <span className="sr-only">Dashboard Avatar</span>
+              <Image
+                src="/imgs/logo-solo-claroli.jpg"
+                alt="Logo Amanda Attelie"
+                width={70}
+                height={70}
+                className="rounded-full"
+              />
+              <span className="sr-only">Logo</span>
             </Link>
 
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
                   href="/"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-secondary hover:bg-primary-foreground"
                 >
                   <Home className="h-5 w-6" />
                   <span className="sr-only">Início</span>
@@ -37,7 +43,7 @@ export function Sidebar() {
               <TooltipTrigger asChild>
                 <Link
                   href="/pedidos"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-secondary hover:bg-primary-foreground"
                 >
                   <ShoppingBag className="h-5 w-6" />
                   <span className="sr-only">Pedidos</span>
@@ -50,7 +56,7 @@ export function Sidebar() {
               <TooltipTrigger asChild>
                 <Link
                   href="/produtos"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-secondary hover:bg-primary-foreground"
                 >
                   <Package className="h-5 w-6" />
                   <span className="sr-only">Produtos</span>
@@ -63,7 +69,7 @@ export function Sidebar() {
               <TooltipTrigger asChild>
                 <Link
                   href="/clientes"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-secondary hover:bg-primary-foreground"
                 >
                   <Users className="h-5 w-6" />
                   <span className="sr-only">Clientes</span>
@@ -76,7 +82,7 @@ export function Sidebar() {
               <TooltipTrigger asChild>
                 <Link
                   href="/configuracoes"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-secondary hover:bg-primary-foreground"
                 >
                   <Settings2 className="h-5 w-6" />
                   <span className="sr-only">Configurações</span>
@@ -93,7 +99,7 @@ export function Sidebar() {
               <TooltipTrigger asChild>
                 <Link
                   href="/login"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground hover:bg-primary-foreground"
                 >
                   <LogOut className="h-5 w-6 text-red-600" />
                   <span className="sr-only">Sair</span>
