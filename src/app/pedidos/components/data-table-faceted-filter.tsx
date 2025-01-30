@@ -28,7 +28,7 @@ export function DataTableFacetedFilter<TData, TValue>({
 
   return (
     <Popover>
-      <PopoverTrigger asChild>
+      <PopoverTrigger asChild className="mr-4">
         <Button variant="outline" size="sm" className="h-8 border-dashed">
           <PlusCircle />
           {title}
@@ -71,7 +71,7 @@ export function DataTableFacetedFilter<TData, TValue>({
         <div className="p-2">
           <input
             type="text"
-            placeholder={`Search ${title}`}
+            placeholder={`Pesquisar por ${title}`}
             className="mb-2 w-full rounded border border-gray-300 p-2 text-sm"
           />
           <ul className="space-y-2">
@@ -119,7 +119,7 @@ export function DataTableFacetedFilter<TData, TValue>({
                 onClick={() => column?.setFilterValue(undefined)}
                 className="text-sm text-red-600 hover:underline"
               >
-                Clear filters
+                Limpar Filtros
               </button>
             </div>
           )}

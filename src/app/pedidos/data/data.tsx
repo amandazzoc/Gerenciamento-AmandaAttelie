@@ -2,17 +2,21 @@ import { ArrowDown, ArrowRight, ArrowUp, CheckCircle, CircleOff, StopCircle, Tim
 
 export const labels = [
   {
-    value: "Crochê",
+    value: "croche",
     label: "Crochê",
   },
   {
-    value: "Amigurumi",
+    value: "amigurumi",
     label: "Amigurumi",
   },
   {
-    value: "Bordado",
+    value: "nordado",
     label: "Bordado",
   },
+  {
+    value: "outro",
+    label: "Outro"
+  }
 ];
 
 export const statuses = [

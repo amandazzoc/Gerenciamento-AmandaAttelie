@@ -29,24 +29,7 @@ export default async function Pedidos(){
     return (
       <main className="sm:ml-14 p-4">
         <section className="m-4 flex flex-col">
-          <h1 className="mb-4 font-bold text-lg sm:text-xl">Pedidos</h1>
-          <div className="md:hidden">
-            <Image
-              src="/imgs/table.png"
-              width={1280}
-              height={998}
-              alt="Playground"
-              className="block dark:hidden"
-            />
-            <Image
-              src="/examples/tasks-dark.png"
-              width={1280}
-              height={998}
-              alt="Playground"
-              className="hidden dark:block"
-            />
-          </div>
-          <div className="hidden h-full flex-1 flex-col  p-8 md:flex">
+          <div className="h-full flex-1 flex-col md:p-8">
             <DataTable data={tasks} columns={columns} />
           </div>
         </section>
