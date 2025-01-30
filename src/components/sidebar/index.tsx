@@ -2,7 +2,7 @@ import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/s
 import { Button } from "../ui/button";
 import Image from "next/image"
 import Link from "next/link";
-import { Home, LogOut, Menu, Package, PanelBottom, Settings2, ShoppingBag, Users } from "lucide-react";
+import { Calculator, Home, LogOut, Menu, Package, PanelBottom, Settings2, ShoppingBag, Users } from "lucide-react";
 import { TooltipProvider, Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 
@@ -89,6 +89,19 @@ export function Sidebar() {
                 </Link>
               </TooltipTrigger>
               <TooltipContent side="right">Configurações</TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href="/calculadora"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-secondary hover:bg-primary-foreground"
+                >
+                  <Calculator className="h-5 w-6" />
+                  <span className="sr-only">Calculadora de preço</span>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent side="right">Calculadora</TooltipContent>
             </Tooltip>
           </TooltipProvider>
         </nav>

@@ -1,14 +1,13 @@
-'use client'
+"use client";
 
 import { ColumnDef } from "@tanstack/react-table";
 
-
-import { statuses } from "../data/data";
-import { Task } from "../data/schema";
+import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@radix-ui/react-checkbox";
+import { statuses } from "../../data/data";
+import { Task } from "../../data/schema";
 import { DataTableColumnHeader } from "./data-table-column-header";
 import { DataTableRowActions } from "./data-table-row-actions";
-import { Badge } from "@/components/ui/badge";
 
 export const columns: ColumnDef<Task>[] = [
   {
@@ -120,7 +119,6 @@ export const columns: ColumnDef<Task>[] = [
       <DataTableColumnHeader column={column} title="Cliente" />
     ),
     cell: ({ row }) => {
-
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate font-medium">
