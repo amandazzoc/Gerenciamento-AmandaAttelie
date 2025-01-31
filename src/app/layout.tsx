@@ -5,7 +5,6 @@ import "./globals.css";
 import { cn } from '@/lib/utils'
 
 import {Sidebar} from '@/components/sidebar'
-import Head from "next/head";
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -21,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="icon" href="/imgs/logo-solo-claroli.jpg" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",

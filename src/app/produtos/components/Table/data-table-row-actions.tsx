@@ -43,20 +43,7 @@ export function DataTableRowActions<TData>({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[160px]">
         <DropdownMenuItem>Editar</DropdownMenuItem>
-        <DropdownMenuItem>Copiar</DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuSub>
-          <DropdownMenuSubTrigger>Tipos</DropdownMenuSubTrigger>
-          <DropdownMenuSubContent>
-            <DropdownMenuRadioGroup value={products.tag}>
-              {tags.map((tag) => (
-                <DropdownMenuRadioItem key={tag.value} value={tag.value}>
-                  {tag.label}
-                </DropdownMenuRadioItem>
-              ))}
-            </DropdownMenuRadioGroup>
-          </DropdownMenuSubContent>
-        </DropdownMenuSub>
+        <DropdownMenuItem>Detalhes</DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           Deletar

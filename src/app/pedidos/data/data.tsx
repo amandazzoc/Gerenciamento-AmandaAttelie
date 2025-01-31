@@ -10,7 +10,7 @@ export const labels = [
     label: "Amigurumi",
   },
   {
-    value: "nordado",
+    value: "bordado",
     label: "Bordado",
   },
   {
