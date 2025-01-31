@@ -18,8 +18,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { labels } from "../../data/data";
-import { taskSchema } from "../../data/schema";
+import { tags } from "../../data/data";
+import { productsSchema } from "../../data/schema";
 
 interface DataTableRowActionsProps<TData> {
   row: Row<TData>;
@@ -28,7 +28,7 @@ interface DataTableRowActionsProps<TData> {
 export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
-  const task = taskSchema.parse(row.original);
+  const products = productsSchema.parse(row.original);
 
   return (
     <DropdownMenu>
@@ -43,7 +43,7 @@ export function DataTableRowActions<TData>({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[160px]">
         <DropdownMenuItem>Editar</DropdownMenuItem>
-        <DropdownMenuItem>Copiar</DropdownMenuItem>
+        <DropdownMenuItem>Detalhes</DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           Deletar

@@ -1,0 +1,222 @@
+[
+    {
+        "id": "1",
+        "title": "Boneca de Amigurumi",
+        "tag": "amigurumi",
+        "price": "R$ 50,00",
+        "description": "Boneca feita à mão com técnica de amigurumi.",
+        "height": "25 cm",
+        "timeProduction": "10 horas",
+        "pattern": "crochê",
+        "weight": "200 g"
+    },
+    {
+        "id": "2",
+        "title": "Tapete de Crochê",
+        "tag": "croche",
+        "price": "R$ 80,00",
+        "description": "Tapete artesanal feito com fio de algodão.",
+        "height": "1 m",
+        "timeProduction": "15 horas",
+        "pattern": "crochê",
+        "weight": "500 g"
+    },
+    {
+        "id": "3",
+        "title": "Quadro Bordado",
+        "tag": "bordado",
+        "price": "R$ 120,00",
+        "description": "Quadro decorativo bordado à mão.",
+        "height": "30 cm",
+        "timeProduction": "20 horas",
+        "pattern": "bordado",
+        "weight": "300 g"
+    },
+    {
+        "id": "4",
+        "title": "Chaveiro de Amigurumi",
+        "tag": "amigurumi",
+        "price": "R$ 20,00",
+        "description": "Chaveiro feito com técnica de amigurumi.",
+        "height": "10 cm",
+        "timeProduction": "5 horas",
+        "pattern": "crochê",
+        "weight": "50 g"
+    },
+    {
+        "id": "5",
+        "title": "Almofada de Crochê",
+        "tag": "croche",
+        "price": "R$ 70,00",
+        "description": "Almofada decorativa feita de crochê.",
+        "height": "40 cm",
+        "timeProduction": "12 horas",
+        "pattern": "crochê",
+        "weight": "400 g"
+    },
+    {
+        "id": "6",
+        "title": "Bolsa de Crochê",
+        "tag": "croche",
+        "price": "R$ 90,00",
+        "description": "Bolsa artesanal feita de crochê.",
+        "height": "30 cm",
+        "timeProduction": "18 horas",
+        "pattern": "crochê",
+        "weight": "350 g"
+    },
+    {
+        "id": "7",
+        "title": "Toalha Bordada",
+        "tag": "bordado",
+        "price": "R$ 60,00",
+        "description": "Toalha de mesa bordada à mão.",
+        "height": "1,5 m",
+        "timeProduction": "25 horas",
+        "pattern": "bordado",
+        "weight": "600 g"
+    },
+    {
+        "id": "8",
+        "title": "Boneco de Amigurumi",
+        "tag": "amigurumi",
+        "price": "R$ 55,00",
+        "description": "Boneco feito à mão com técnica de amigurumi.",
+        "height": "20 cm",
+        "timeProduction": "8 horas",
+        "pattern": "crochê",
+        "weight": "180 g"
+    },
+    {
+        "id": "9",
+        "title": "Caminho de Mesa de Crochê",
+        "tag": "croche",
+        "price": "R$ 100,00",
+        "description": "Caminho de mesa feito de crochê.",
+        "height": "1,2 m",
+        "timeProduction": "20 horas",
+        "pattern": "crochê",
+        "weight": "450 g"
+    },
+    {
+        "id": "10",
+        "title": "Porta-copos Bordado",
+        "tag": "bordado",
+        "price": "R$ 30,00",
+        "description": "Conjunto de porta-copos bordados à mão.",
+        "height": "15 cm",
+        "timeProduction": "6 horas",
+        "pattern": "bordado",
+        "weight": "100 g"
+    },
+    {
+        "id": "11",
+        "title": "Cachecol de Crochê",
+        "tag": "croche",
+        "price": "R$ 45,00",
+        "description": "Cachecol feito de crochê.",
+        "height": "1,5 m",
+        "timeProduction": "10 horas",
+        "pattern": "crochê",
+        "weight": "250 g"
+    },
+    {
+        "id": "12",
+        "title": "Gorro de Crochê",
+        "tag": "croche",
+        "price": "R$ 35,00",
+        "description": "Gorro feito de crochê.",
+        "height": "25 cm",
+        "timeProduction": "7 horas",
+        "pattern": "crochê",
+        "weight": "150 g"
+    },
+    {
+        "id": "13",
+        "title": "Bolsa Bordada",
+        "tag": "bordado",
+        "price": "R$ 110,00",
+        "description": "Bolsa decorativa bordada à mão.",
+        "height": "35 cm",
+        "timeProduction": "22 horas",
+        "pattern": "bordado",
+        "weight": "400 g"
+    },
+    {
+        "id": "14",
+        "title": "Boneca de Pano",
+        "tag": "outros",
+        "price": "R$ 40,00",
+        "description": "Boneca de pano feita à mão.",
+        "height": "30 cm",
+        "timeProduction": "12 horas",
+        "pattern": "costura",
+        "weight": "250 g"
+    },
+    {
+        "id": "15",
+        "title": "Colar de Crochê",
+        "tag": "croche",
+        "price": "R$ 25,00",
+        "description": "Colar artesanal feito de crochê.",
+        "height": "50 cm",
+        "timeProduction": "5 horas",
+        "pattern": "crochê",
+        "weight": "80 g"
+    },
+    {
+        "id": "16",
+        "title": "Brinco de Crochê",
+        "tag": "croche",
+        "price": "R$ 15,00",
+        "description": "Brinco artesanal feito de crochê.",
+        "height": "5 cm",
+        "timeProduction": "3 horas",
+        "pattern": "crochê",
+        "weight": "20 g"
+    },
+    {
+        "id": "17",
+        "title": "Almofada Bordada",
+        "tag": "bordado",
+        "price": "R$ 75,00",
+        "description": "Almofada decorativa bordada à mão.",
+        "height": "40 cm",
+        "timeProduction": "15 horas",
+        "pattern": "bordado",
+        "weight": "350 g"
+    },
+    {
+        "id": "18",
+        "title": "Boneco de Pano",
+        "tag": "outros",
+        "price": "R$ 45,00",
+        "description": "Boneco de pano feito à mão.",
+        "height": "35 cm",
+        "timeProduction": "14 horas",
+        "pattern": "costura",
+        "weight": "300 g"
+    },
+    {
+        "id": "19",
+        "title": "Cesta de Crochê",
+        "tag": "croche",
+        "price": "R$ 50,00",
+        "description": "Cesta decorativa feita de crochê.",
+        "height": "20 cm",
+        "timeProduction": "8 horas",
+        "pattern": "crochê",
+        "weight": "200 g"
+    },
+    {
+        "id": "20",
+        "title": "Marcador de Página Bordado",
+        "tag": "bordado",
+        "price": "R$ 10,00",
+        "description": "Marcador de página bordado à mão.",
+        "height": "15 cm",
+        "timeProduction": "2 horas",
+        "pattern": "bordado",
+        "weight": "30 g"
+    }
+]

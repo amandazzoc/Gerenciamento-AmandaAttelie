@@ -7,9 +7,29 @@ import {
   CardTitle,
 } from "../ui/card";
 import ClientCard from "../clientCard";
+import { promises as fs } from "fs";
+import path from "path";
+import { z } from "zod";
+import { taskSchema } from "../../app/pedidos/data/schema";
 
+async function getData() {
+  const data = await fs.readFile(
+    path.join(process.cwd(), "src/app/pedidos/data/tasks.json")
+  );
 
-export default function Pendentes() {
+  const order = JSON.parse(data.toString());
+
+  return z.array(taskSchema).parse(order);
+}
+
+export default async function Pendentes() {
+
+  const orders = await getData()
+
+  const pendingOrders = orders.filter(
+    (order) => order.status === "in progress"
+  );
+
   return (
     <Card>
       <CardHeader>
@@ -23,24 +43,18 @@ export default function Pendentes() {
       </CardHeader>
 
       <CardContent className="flex flex-col gap-2">
-        <ClientCard
-          name="Tainá Passos"
-          image="/imgs/top-quadrado.png"
-          description="Top Quadrado"
-          price="R$ 50"
+        {pendingOrders.length > 0 ? (
+          pendingOrders.map((order) => (
+            <ClientCard
+            key={order.id} 
+            name={order.cliente}
+            description={order.title}
+            price={`R$ ${order.price}`}
         />
-        <ClientCard
-          name="Julia Morais"
-          image="/imgs/top-julia.jpg"
-          description="Cropped Lia"
-          price="R$ 70"
-        />
-        <ClientCard
-          name="Leandra"
-          image="/imgs/jogo-americano.jpg"
-          description="Jogo Americano"
-          price="R$ 230"
-        />
+          ))
+        ) : (
+          <p className="text-gray-500">Nenhum pedido pendente</p>
+        )}
       </CardContent>
     </Card>
   );
